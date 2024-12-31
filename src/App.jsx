@@ -115,7 +115,9 @@ function App() {
               MONTH
             </label>
             <input
-              className="text-[25px] rounded-lg p-6 border border-light-grey h-10 outline-none pl-2 font-bold"
+              className={`month ${
+                monthError ? "error" : ""
+              } text-[25px] rounded-lg p-6 border border-light-grey h-10 outline-none pl-2 font-bold`}
               type="text"
               id="month"
               value={month}
@@ -132,7 +134,9 @@ function App() {
               YEAR
             </label>
             <input
-              className="text-[25px] rounded-lg p-6 border border-light-grey h-10 outline-none pl-2 font-bold"
+              className={`year ${
+                yearError ? "error" : ""
+              } text-[25px] rounded-lg p-6 border border-light-grey h-10 outline-none pl-2 font-bold`}
               type="text"
               id="year"
               value={year}
