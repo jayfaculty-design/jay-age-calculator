@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 0%, 8%);
+}
+body {
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+  border-color: hsl(259, 100%, 65%);
+  box-shadow: 0 0 2px hsl(259, 100%, 65%);
+  border-radius: 5px;
+}
+.day.error {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.month.error {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.year.error {
+  border-color: hsl(0, 100%, 67%);
+}
